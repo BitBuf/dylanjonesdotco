@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Dylan Jones",
+    template: "%s | Dylan Jones",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Generative AI content creator, governance engineer and consultant",
   openGraph: {
-    title: "chronark.com",
+    title: "Dylan Jones",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "Generative AI content creator, governance engineer and consultant",
+    url: "https://dylanjones.co",
+    siteName: "dylanjones.co",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://dylanjones.co/og.png",
         width: 1920,
         height: 1080,
       },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Dylan Jones",
     card: "summary_large_image",
   },
   icons: {
