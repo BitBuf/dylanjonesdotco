@@ -1,6 +1,11 @@
+'use client';
+
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import {Card} from "@/app/components/card";
+import {FaExternalLinkAlt} from "react-icons/fa";
+import Beacon from 'react-status-beacon'
 
 const navigation = [
   // { name: "Work", href: "/work" },
@@ -34,6 +39,25 @@ export default function Home() {
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
         <div className="my-16 text-center animate-fade-in">
+                <Link href={'https://generativeconsulting.ai'} rel={'norefferer noopener'} target={'_blank'}>
+                    <Card>
+                        <div className={'flex mt-8 -mb-2 items-center justify-center gap-2'}>
+                            <Beacon status='neutral' colors={{neutral: '#60a5fa'}} />
+                            <p className={'text-zinc-400 mt-1 group-hover:text-zinc-300'}>For Organizations</p>
+                        </div>
+                        <article className="relative w-full h-full p-4 md:p-8">
+                            <h2
+                                id="featured-post"
+                                className="mt-4 text-2xl font-bold text-zinc-200 group-hover:text-white sm:text-4xl font-display"
+                            >
+                                Looking to plan a robust <br/> Generative AI deployment?
+                            </h2>
+                            <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300 flex gap-2 items-center justify-center">
+                                Visit my firm, Generative Consulting <FaExternalLinkAlt/>
+                            </p>
+                        </article>
+                    </Card>
+                </Link>
             {/*<div className={'grid grid-cols-3 gap-8'}>*/}
             {/*    <Card>*/}
             {/*        <article className="relative w-full h-full p-4 md:p-8">*/}
